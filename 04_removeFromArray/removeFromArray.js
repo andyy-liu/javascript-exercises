@@ -1,8 +1,11 @@
-const removeFromArray = function(arr, ...remove) {
+const removeFromArray = function(arr, ...args) {
     // for each argument in the argument remove
-    remove.forEach((arg) => { 
+    args.forEach((arg) => {
         const i = arr.indexOf(arg);
         arr.splice(i, 1)
+        if (arr.indexOf(arg) === -1) {
+
+        }
     })
     return arr
 };
